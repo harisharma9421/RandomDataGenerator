@@ -1,0 +1,137 @@
+/* privacy.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2b66f2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2b66f2;
+}
+
+.policy-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.policy-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1c2d5a;
+    font-weight: 700;
+    text-align: center;
+}
+
+.policy-container p,
+.policy-container li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.policy-container section {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.policy-container h2 {
+    color: #2b66f2;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.policy-container ul {
+    padding-left: 1.2rem;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #2b66f2;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #nav-links {
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        margin-top: 1rem;
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+}
